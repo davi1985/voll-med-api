@@ -33,7 +33,7 @@ The following tools were used in this project:
 - [x] DTOs
 - [x] `@Valid` annotation
 - [x] `@Transactional` annotation
-- [] Error management
+- [ ] Error management
 - [ ] Spring Security
 - [ ] Authentication and authorization
 

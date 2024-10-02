@@ -1,4 +1,4 @@
-<h1 align="center">Api Vollmed</h1>
+<h1 align="center">Vollmed API</h1>
 
 <br>
 

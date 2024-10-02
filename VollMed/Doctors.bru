@@ -1,0 +1,29 @@
+meta {
+  name: Doctors
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/doctors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Davi Silva",
+    "email": "email@email.com",
+    "crm": "123456",
+    "speciality": "ortopedia",
+    "address": {
+      "publicPlace": "Rua 1",
+      "neighborhood": "Centro",
+      "zipCode": "62810000",
+      "state": "CE",
+      "city": "Icapuí",
+      "number": "1A",
+      "complement": "serra"
+    }
+  }
+}

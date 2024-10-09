@@ -1,4 +1,4 @@
-package dev.dsilva.api.vollmed.address;
+package dev.dsilva.api.vollmed.domain.address;
 
 import dev.dsilva.api.vollmed.dtos.CreateAddress;
 import jakarta.persistence.Embeddable;

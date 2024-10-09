@@ -1,6 +1,8 @@
-package dev.dsilva.api.vollmed.doctors;
+package dev.dsilva.api.vollmed.domain.doctors;
 
-import dev.dsilva.api.vollmed.address.Address;
+import dev.dsilva.api.vollmed.domain.address.Address;
+import dev.dsilva.api.vollmed.domain.doctors.dtos.CreateDoctorRequest;
+import dev.dsilva.api.vollmed.domain.doctors.dtos.UpdateDoctorRequest;
 import jakarta.persistence.*;
 import lombok.*;
 

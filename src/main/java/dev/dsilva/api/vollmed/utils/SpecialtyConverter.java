@@ -1,6 +1,6 @@
 package dev.dsilva.api.vollmed.utils;
 
-import dev.dsilva.api.vollmed.doctors.Specialty;
+import dev.dsilva.api.vollmed.domain.doctors.Specialty;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 

@@ -1,6 +1,8 @@
-package dev.dsilva.api.vollmed.doctors;
+package dev.dsilva.api.vollmed.domain.doctors.dtos;
 
-import dev.dsilva.api.vollmed.address.Address;
+import dev.dsilva.api.vollmed.domain.address.Address;
+import dev.dsilva.api.vollmed.domain.doctors.Doctor;
+import dev.dsilva.api.vollmed.domain.doctors.Specialty;
 
 public record DoctorData(
         Long id,

@@ -1,4 +1,4 @@
-package dev.dsilva.api.vollmed.doctors;
+package dev.dsilva.api.vollmed.domain.doctors;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

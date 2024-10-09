@@ -1,4 +1,4 @@
-package dev.dsilva.api.vollmed.doctors;
+package dev.dsilva.api.vollmed.domain.doctors;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

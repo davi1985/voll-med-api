@@ -1,5 +1,6 @@
-package dev.dsilva.api.vollmed.doctors;
+package dev.dsilva.api.vollmed.domain.doctors.dtos;
 
+import dev.dsilva.api.vollmed.domain.doctors.Specialty;
 import dev.dsilva.api.vollmed.dtos.CreateAddress;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;

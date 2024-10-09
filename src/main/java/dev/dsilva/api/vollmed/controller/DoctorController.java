@@ -1,12 +1,18 @@
 package dev.dsilva.api.vollmed.controller;
 
-import dev.dsilva.api.vollmed.doctors.*;
+import dev.dsilva.api.vollmed.domain.doctors.Doctor;
+import dev.dsilva.api.vollmed.domain.doctors.DoctorRepository;
+import dev.dsilva.api.vollmed.domain.doctors.dtos.CreateDoctorRequest;
+import dev.dsilva.api.vollmed.domain.doctors.dtos.DoctorResponse;
+import dev.dsilva.api.vollmed.domain.doctors.dtos.UpdateDoctorRequest;
+import dev.dsilva.api.vollmed.domain.doctors.dtos.UpdateDoctorResponse;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -45,9 +51,8 @@ public class DoctorController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Optional<DoctorData>> findById(@PathVariable Long id) {
-        var doctorData = repository.findById(id)
-                .map(DoctorData::new);
+    public ResponseEntity<Optional<Doctor>> findById(@PathVariable Long id) {
+        var doctorData = repository.findById(id);
 
         if (doctorData.isEmpty()) {
             return ResponseEntity.notFound().build();

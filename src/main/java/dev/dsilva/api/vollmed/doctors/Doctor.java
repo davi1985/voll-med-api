@@ -29,7 +29,7 @@ public class Doctor {
     private Boolean active;
 
 
-    public Doctor(CreateDoctor doctor) {
+    public Doctor(CreateDoctorRequest doctor) {
         this.active = true;
         this.name = doctor.name();
         this.email = doctor.email();
